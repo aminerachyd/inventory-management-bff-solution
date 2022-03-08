@@ -12,7 +12,7 @@
   },
   "pact": {
     "providerBaseUrl": "",
-    "pactBrokerUrl": "",
+    "pactBrokerUrl": "https://pact-broker-tools.lab-demos-ocp-0a90eebd1b04c36c8a65993d6a0c3f93-0000.eu-de.containers.appdomain.cloud",
     "provider": ""
   },
   "scripts": {
@@ -30,8 +30,6 @@
     "serve": "node dist/src",
     "start:dev": "ts-node src | pino-pretty",
     "upgrade-interactive": "npm-check --update",
-    "pact:verify": "ts-node test/pact-verify",
-    "pact:publish": "ts-node test/pact-publish",
     "sonarqube:scan": "npm run test && ts-node test/sonarqube-scan"
   },
   "author": "",
